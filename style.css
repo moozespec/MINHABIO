@@ -1,0 +1,176 @@
+/*inicio do codigo*/
+/* esse conjunto de código altera o tamanho da pagina tanto em altura quanto em largura */ 
+html, body {   
+  width: 80%;        
+  height: 100%;
+}
+/*fim do codigo*/
+
+
+/*inicio do codigo*/
+/*esse conjunto de codigo muda a cor de fundo do site e a cor da letra de todo o site*/
+body { 
+    background-color: lightgray;
+    color: black;
+}
+/*fim do codigo*/  
+
+
+
+/*inicio do codigo*/
+/*esse código altera a cor da letra e o fundo da letra especificada no style "p" */ 
+p {
+  color: black;     
+  background-color:  ;
+}
+/*fim do codigo*/
+
+
+/*inicio do codigo*/
+/*esse código é da barra de rolagem estilizada*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #6524ff;
+    border-radius: 80px;
+  }
+
+::-webkit-scrollbar-thumb {
+    background: #000000;
+    border-radius: 80px;
+}
+/*fim do codigo*/
+
+
+/*inicio do codigo*/
+ /*esse código é para a identação de todo o texto da página*/
+p {
+  margin: 0;
+  text-indent: 3ch;
+}
+
+p.caldeirao {
+   text-indent: 0;
+   display: inline;
+}
+p.caldeirao + p.caldeirao::before {
+  content: " ¶ ";
+}
+
+
+/*inicio do codigo*/
+/*aumenta o espaço em branco após um parágrafo*/
+/* aumenta o espaço em branco após um parágrafo*/
+p {
+  margin-bottom: 1em; 
+}
+/*fim do codigo*/
+
+
+/*inicio do codigo*/
+/*este codigo serve para criar a barra de opçoes no cabecalho da pagina.*/
+
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#menu-h{
+    background-color: rgb(37, 37, 39);
+}
+
+#menu-h ul {
+    max-width: 800px;
+    list-style: none;
+    padding: 0;
+}
+
+#menu-h ul li {
+    display: inline;
+}
+
+#menu-h ul li a {
+    color: #FFF;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background .4s;
+}
+
+#menu-h ul li a:hover {
+    background-color: #6524ff;
+}
+
+#menu-h ul li:last-child a {
+    float: right;
+    background-color: #6524ff;
+}
+
+/*fim do codigo*/
+
+
+
+/*inicio do codigo*/
+/*este codigo faz com que o site seja redimensionado automaticamente de acordo com o tamanho da fonte*/
+html {
+  font-seze: calc(60% + 0.8vmin);
+
+}
+/*fim do codigo*/
+
+
+/*inicio do codigo*/
+/* este codigo ira dimensionar o conteudo main para uma largura maxima de 40 rem e ''margin: 0 auto'' garante que o conteudo seja centralizado horizontlmente*/
+
+main {
+  max-width: 40rem;
+  margin: 0 auto;
+
+}
+/*fim do codigo*/
+
+
+/*inicio do codigo*/
+/*esse codigo serve para fazer scroll suave da pagina*/
+/*não funciona no Safari*/
+html {
+  scroll-behavior: smooth;
+  }
+/*fim do codigo*/
+
+
+
+/*inicio do codigo*/
+/*esse codigo serve para fixar o RODAPÉ (footer)no fim da pag, dar cor e posicionar o box*/
+footer {
+  background: #6524ff;
+  color: white;
+  line-height: 50px;
+  padding: 0 20px;
+}
+/*fim do codigo*/
+
+
+p {  
+  color: graytext;
+  font: style: ;
+  font-family: comic sans;
+
+  
+}
+
+
+br {
+  color: graytext;
+}
+
+
+
+
+
+

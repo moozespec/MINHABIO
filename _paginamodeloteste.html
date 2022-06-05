@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  
+  <meta charset="utf-8">
+  <!--linguagem da pagina-->
+  <meta name="viewport" content="width=device-width">
+  <title>Minha Bio | Home</title>
+  <!--Título da pagina-->
+
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <!--Ligacao da pagina de css na html-->
+
+
+</head>
+
+
+<body>
+  <!--AQUI É O CABEÇALHO-->
+  <div id="interface">
+    <header id="cabecalho">
+
+      <nav id="menu-h">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="sobre.htm">Sobre</a></li>
+          <li><a href="minhabio.html">Minha Bio</a></li>
+          <li><a href="#">Fotos</a></li>
+          <li><a href="portfolio.html">Portfólio</a></li>
+          <li><a href="#">Hobbies</a></li>
+          <li><a href="#">Fale Comigo</a></li>
+        </ul>
+      </nav>
+
+      <hgroup>
+        <h1>Seja Bem Vindo!</h1>
+        <h5>Introdução 08/05/2022</h5><br>
+      </hgroup>
+
+    </header>
+<!--AQUI TERMINA O CABEÇALHO-->
+
+
+<font color="gray">  USAR COMO MODELO </font> 
+    
+
+
+
+
+<!--LINKS DO RODAPE-->
+   <center> <br><br>
+     <a href="https://www.linkedin.com/in/felipe-daniel-santos-6126351bb/" target="_blank"
+          rel="noopener noreferrer">Linkedin</a> 
+      | <a href="https://www.facebook.com/darkmooze/" target=" _blank"
+          rel="noopener noreferrer">Facebook</a> 
+      | <a href="https://www.site.com" target=" _blank"
+          rel="noopener noreferrer">Instagram</a> 
+      | <a href="https://github.com/moozespec" target=" _blank"
+          rel="noopener noreferrer">Github</a></p>
+   </center>
+    
+
+    
+
+<!--FIM DOS LINKS-->
+
+    <!--CODIGO HTML PARA UTILIZAR O RELOGIO EM TEMPO REAL-->
+    <center>
+    <div id="data-hora"></div>
+    <script>
+      // Função para formatar 1 em 01
+      const zeroFill = n => {
+        return ('0' + n).slice(-2);
+      }
+
+      // Cria intervalo
+      const interval = setInterval(() => {
+        // Pega o horário atual
+        const now = new Date();
+
+        // Formata a data conforme dd/mm/aaaa hh:ii:ss
+        const dataHora = zeroFill(now.getUTCDate()) + '/' + zeroFill((now.getMonth() + 1)) + '/' + now.getFullYear() + ' ' + zeroFill(now.getHours()) + ':' + zeroFill(now.getMinutes()) + ':' + zeroFill(now.getSeconds());
+
+        // Exibe na tela usando a div#data-hora
+        document.getElementById('data-hora').innerHTML = dataHora;
+      }, 1000);
+    </script>
+    </center>
+    <!--FIM DO CODIGO DO RELOGIO EM TEMPO REAL-->
+
+    <footer class="footer">
+      <center>2022 - by moozespec</center>
+        </footer>
+  
+    
+</body>
+
+</html>

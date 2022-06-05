@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <!--linguagem da pagina-->
+  <meta name="viewport" content="width=device-width">
+  <title>Minha Bio | Sobre | Felipe Daniel</title>
+  <!--Título da pagina-->
+
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <!--Ligacao da pagina de css na html-->
+
+</head>
+
+
+<body>
+  <div id="interface">
+    <header id="cabecalho">
+
+      <nav id="menu-h">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="sobre.htm">Sobre</a></li>
+          <li><a href="minhabio.html">Minha Bio</a></li>
+          <li><a href="fotos.html">Fotos</a></li>
+          <li><a href="portfolio.html">Portfólio</a></li>
+          <li><a href="#">Hobbies</a></li>
+          <li><a href="#">Fale Comigo</a></li>
+        </ul>
+      </nav>
+
+      <hgroup>
+        <h1>Felipe Daniel</h1>
+        <h5>Origem: Biografia Própria.</h5><br>
+      </hgroup>
+
+    </header>
+
+
+
+    <H1>Quem Sou?</H1><br>
+    <div>
+      <div style="float: right">
+        <img src="img/fotos/eu.jpg" />
+        <!--codigo para inserir imagem. A imagem se posicionara como um texto(um embaixo do outro) até que seja aplicada mudanca por html ou css-->
+      </div>
+      
+      <div>
+
+
+        <!--este texto abaixo so esta dentro dessa div para que a foto fique do lado do texto-->
+        <p><i><b>Felipe Daniel da Silva dos Santos</i></b>, mais conhecido como: <i>moozespec</i>, <i>phelipedaniels</i>
+          ou simplesmente Daniel, nascido em 16, de janeiro de 1993; Filósofo, Programador e Auxliar de Farmácia
+          Brasileiro natural de São Paulo.</p>
+      </div>
+    </div>
+
+
+
+    <p>Daniel iniciou seus estudos em tecnologia ingressando em um curso rápido de UMA semana em um Telecentro, em uma
+      unidade do Centro Educacional Unificado, o CEU Alarenga, na Zona Sul. Foi lá que teve seu primeiro contato com
+      computadores com interface Linux e aulas de digitação básicas.
+      Sempre teve curiosidade sobre como as coisas funcionavam, desde aparelhos de celular, até cafeteiras e aparelhos
+      de radio.</p>
+    <p>Em meados de 2008, ganhou seu primeiro computador de seu pai Edmilson, que comprou o mesmo em diversas parcelas e
+      com muito trabalho conseguiu pagar. Seu pai que, incentivador que sempre foi, o presenteava quando podia com
+      alguns celulares usados adquiridos em lojas do centro de São Paulo.</p>
+
+
+    <details>
+      <summary>Clique aqui para ver sobre a Carreira Profissional</summary><BR>
+      <h2>Carreira Profissional</h2> <br>
+      <p>Se formou no ensino médio só em 2011, repetiu um ano (8 série), pois conversava demais nas aulas,
+        atrapalhando o seu desempenho com as notas e atrapalhando a aula dos professores. Logo depois disso, de tanto
+        procurar, conseguiu arrumar um emprego de ''Mensageiro'' em um hospital da Zona Sul de São Paulo, o Hospital
+        Sepaco. Foi trabalhando neste hospital que Felipe Daniel, conseguiu desenvolver muitas capacidades, como:
+        trabalho em equipe, ponderação, hierarquia, respeito, linguagem culta, vontade de aprender e amadurecimento.
+        Apesar de gostar muito desta oportunidade, algumas coisas o deixaram impaciente e irritado, ocasionando a pedida
+        do mesmo para sair da instituição.</p>
+
+      <p>Em seguida, conseguiu uma nova oportunidade em um outro hospital chamado, Hospital Portinari, na zona Oeste de
+        São Paulo. Neste lugar foi muito bem recebido por seus companheiros. Felipe se deslocava por quase 35km para
+        chegar. Eram 2:30hs para chegar e ir embora dia sim dia não. Neste Hospital, foram fortalecidas as qualidades
+        adquiridas no local anterior e acrescidas muitas outras como: confiança, foco, disciplina e sinceridade. </p>
+      <p>Logo depois partiu para um novo desafio, trabalhar na farmácia de um centro cirúrgico. Foram mais dois anos até
+        conseguir uma oportunidade melhor em um outro hospital, dessa vez no Ipiranga, chamado Dom Alvarenga. Foi neste
+        lugar que ele conheceu sua esposa, Maria. Enfermeira e dedicada, a mulher dos sonhos de Felipe parecia que
+        esperava por ele, e tudo aconecia para que os dois ficasem juntos. Com ela, digamos que Felipe obteve mais
+        capacidades de resposabilidade.
+        Também foi nessa fase da vida que esteve com a mente mais agitada, pois foi quando ingressou na faculdade de
+        ADS; Enquanto trabalhava de manhã, os horários da tarde e da noite eram desicados ao estudo, seja no refeitório
+        da faculdade, seja em sala de aula. No ano de 2021, terminou a graduação em Análise e Desenvolvimento de
+        Sistemas.
+      <p>Atualmente, Felipe ainda faz parte do corpo de funcionários do Dom Alvarenga, porém, se prepara para um
+        redirecionamento de carreira, migrando para a área de tecnologia e informática (T.I.).</p>
+    </details>
+
+
+
+
+<!--LINKS DO RODAPE-->
+    <body link="SlateBlue" vlink="gray"> <!--codigo para mudar a cor dos links do rodape. link é a cor ativa e vlink é a cor depois de clicar no link-->
+    <center>
+    <br><br>
+    <p> <a href="https://www.linkedin.com/in/felipe-daniel-santos-6126351bb/" target="_blank"
+          rel="noopener noreferrer">Linkedin</a> | <a href="https://www.facebook.com/darkmooze/" target=" _blank"
+          rel="noopener noreferrer">Facebook</a> | <a href="https://www.site.com" target=" _blank"
+          rel="noopener noreferrer">Instagram</a> | <a href="https://github.com/moozespec" target=" _blank"
+          rel="noopener noreferrer">Github</a></p>
+    </p>
+
+<!--FIM DOS LINKS-->
+
+    <!--CODIGO HTML PARA UTILIZAR O RELOGIO EM TEMPO REAL-->
+      <font color="#864086" <!--linha de codigo que mudou a cor do relogio-->
+    <div id="data-hora"></div>
+    <script>
+      // Função para formatar 1 em 01
+      const zeroFill = n => {
+        return ('0' + n).slice(-2);
+      }
+
+      // Cria intervalo
+      const interval = setInterval(() => {
+        // Pega o horário atual
+        const now = new Date();
+
+        // Formata a data conforme dd/mm/aaaa hh:ii:ss
+        const dataHora = zeroFill(now.getUTCDate()) + '/' + zeroFill((now.getMonth() + 1)) + '/' + now.getFullYear() + ' ' + zeroFill(now.getHours()) + ':' + zeroFill(now.getMinutes()) + ':' + zeroFill(now.getSeconds());
+
+        // Exibe na tela usando a div#data-hora
+        document.getElementById('data-hora').innerHTML = dataHora;
+      }, 1000);
+    </script>
+  </center>
+    <!--FIM DO CODIGO DO RELOGIO EM TEMPO REAL-->
+
+    <footer>
+      <p><center>2022 - by moozespec</center></p>
+        </footer 
+          
+</body>
+  </html>
