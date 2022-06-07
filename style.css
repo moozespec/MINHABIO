@@ -8,20 +8,20 @@ html, body {
 
 
 /*inicio do codigo*/
-/*esse conjunto de codigo muda a cor de fundo do site e a cor da letra de todo o site*/
+/*esse conjunto de codigo muda a cor de fundo do site e a cor da letra NÃO DECLARADA ''<p>'' no site.*/
 body { 
     background-color: lightgray;
-    color: black;
+    color: #4a1c78;
 }
 /*fim do codigo*/  
 
 
 
 /*inicio do codigo*/
-/*esse código altera a cor da letra e o fundo da letra especificada no style "p" */ 
+/*esse código altera a cor da letra de TODO O SITE e o fundo da letra especificada no style "p" */ 
 p {
-  color: black;     
-  background-color:  ;
+  color: #555353;     
+  background-color: ; /*fundo colorido */
 }
 /*fim do codigo*/
 
@@ -49,6 +49,7 @@ p {
 p {
   margin: 0;
   text-indent: 3ch;
+ 
 }
 
 p.caldeirao {
@@ -156,20 +157,15 @@ footer {
 /*fim do codigo*/
 
 
-p {  
-  color: graytext;
-  font: style: ;
-  font-family: comic sans;
+
 
   
-}
+
 
 
 br {
   color: graytext;
 }
-
-
 
 
 
