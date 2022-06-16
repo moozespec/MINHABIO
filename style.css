@@ -1,3 +1,6 @@
+@media only screen and (max-width: 480px) {  img {    width: 100%;  }}
+
+@charset "UTF-8";
 /*inicio do codigo*/
 /* esse conjunto de código altera o tamanho da pagina tanto em altura quanto em largura */ 
 html, body {   
@@ -79,6 +82,7 @@ p {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
+    border-radius: 10px;
 }
 
 #menu-h{
@@ -169,4 +173,61 @@ br {
 
 
 
+/*daqui para baixa é o estilo do formulario fale comigo.*/
+
+
+
+
+form div + div {
+  margin-top: 1em;
+}
+
+label {
+  /* Para garantir que todos os rótulos tenham o mesmo tamanho e estejam devidamente alinhados*/
+  display: inline-block;
+  width: 90%;
+  text-align: left;
+}
+
+input, textarea {
+  /* 
+Para garantir que todos os campos de texto tenham as mesmas configurações de fonte
+     Por padrão, as áreas de texto possuem a mesma fonte */
+  font: 1em sans-serif;
+
+  /* Para dar o mesmo tamanho a todos os campos de texto*/
+  width: 350px;
+  box-sizing: border-box;
+
+  /* Para harmonizar o aspecto e a sensação da borda do campo de texto */
+  border: 2px solid #5d37a4;
+  box-shadow: 5px 2px #bababa; 
+  border-radius: 10px;
+  cursor: pointer;
+
+}
+
+
+
+input:focus, textarea:focus {
+  /* Para dar um pouco de destaque aos elementos ativos*/
+  border-color: #390fae;
+
+}
+
+textarea {
+  /* Para alinhar corretamente campos de texto multilinha com seus rótulos */
+  vertical-align: top;
+
+  /* Para dar espaço suficiente para digitar algum texto */
+  height: 8em;
+}
+
+.button {
+  /* Para posicionar os botões na mesma posição dos campos de texto */
+  padding-left: 300px;/* mesmo tamanho que os elementos do rótulo */
+
+
+
+}
 

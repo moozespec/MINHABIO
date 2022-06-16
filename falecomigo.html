@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang"pt-br">
 
 <head>
   <meta charset="utf-8">
   <!--linguagem da pagina-->
   <meta name="viewport" content="width=device-width">
-  <title>Minha Bio | Instituconal</title>
+  <title>Minha Bio | Fale Comigo</title>
   <!--Título da pagina-->
 
-  
+
   <link href="style.css" rel="stylesheet" type="text/css" />
   <!--Ligacao da pagina de css na html-->
+
+  
 
 </head>
 
@@ -33,18 +35,44 @@
       </nav>
 
       <hgroup>
-        <h1>Minha Bio</h1>
+        <h1>Fale Comigo</h1>
         <h5> </h5><br>
       </hgroup>
     </header>
 
-   <br><p> O Minha Bio é um site criado no ano de 2022, sem fins lucrativos, dedicado aqueles que desejam registrar sua história de uma maneira mais simples. Aqui você poderá encontrar alguns acontecimentos e informações sobre o pesquisado.</p> <br>
+   <br><p> Aqui você pode me mandar um sugetão ou crítica contrutiva para que o Minha Bio possa sempre estar em constante evolução.</p> <br>
+    <!--=----------------------------------------->
     
-    <details>
-      <summary>História</summary><BR>
-    <br> <P>Foi criado pelo estudante de programação Felipe Daniel em 2022. Enquanto tinha tempo livre, passava esses momentos desenvolvendo conteúdo para o site e ao mesmo tempo aprendendo HTML, CSS e um pouco de JavaScript. Conforme o WebMaster for aprendendo mais tecnologias, essas mesmas serão pouco à pouco implementadas ao Minha Bio. </p> </br>
-    </details>
+<!--aqui estão os codigos do formulario fale comigo-->
+  <form action="envia_fale.php" method="POST" name="form">
+    <div>
+        <label for="nome">Nome:</label>
+        <input type="texto" id="nome" name="nome_usuario" placeholder="Insira seu nome">
+    </div>
+    <div>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email_usuario" placeholder="Insira seu email">
+    </div>
+    <div class="field">
+      <label class="label">Mensagem:</label>
+      <div class="control">
+        <textarea style="resize:none" name="mensagem" class="textarea" placeholder="Deixe sua mensagem" maxlength="2000"> </textarea>
+        
+    
 
+      </div>
+      </div>
+</form>
+
+<br>
+        <div class="button">
+          <button type="submit">Enviar</button>
+          
+        </div>
+    
+<!--fim do código-->
+
+    
 
 <!--LINKS DO RODAPE-->
     <body link="SlateBlue" vlink="gray"> <!--codigo para mudar a cor dos links do rodape. link é a cor ativa e vlink é a cor depois de clicar no link-->
