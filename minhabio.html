@@ -32,10 +32,35 @@
         </ul>
       </nav>
 
-      <hgroup>
+<hgroup>
+<!--CODIGO HTML PARA UTILIZAR O RELOGIO EM TEMPO REAL-->
+    <div style="text-align:right">
+    <font color="#864086" <!--linha de codigo que mudou a cor do relogio-->
+    <div id="data-hora"></div>
+    <script>
+      // Função para formatar 1 em 01
+      const zeroFill = n => {
+        return ('0' + n).slice(-2);
+      }
+
+      // Cria intervalo
+      const interval = setInterval(() => {
+        // Pega o horário atual
+        const now = new Date();
+
+        // Formata a data conforme dd/mm/aaaa hh:ii:ss
+        const dataHora = zeroFill(now.getUTCDate()) + '/' + zeroFill((now.getMonth() + 1)) + '/' + now.getFullYear() + ' ' + zeroFill(now.getHours()) + ':' + zeroFill(now.getMinutes()) + ':' + zeroFill(now.getSeconds());
+
+        // Exibe na tela usando a div#data-hora
+        document.getElementById('data-hora').innerHTML = dataHora;
+      }, 1000);
+    </script>
+    </div>
+    <!--FIM DO CODIGO DO RELOGIO EM TEMPO REAL-->
+  
         <h1>Minha Bio</h1>
         <h5> </h5><br>
-      </hgroup>
+</hgroup>
     </header>
 
    <br><p> O Minha Bio é um site criado no ano de 2022, sem fins lucrativos, dedicado aqueles que desejam registrar sua história de uma maneira mais simples. Aqui você poderá encontrar alguns acontecimentos e informações sobre o pesquisado.</p> <br>
@@ -59,31 +84,6 @@
     </center>
 <!--FIM DOS LINKS-->
 
-    <!--CODIGO HTML PARA UTILIZAR O RELOGIO EM TEMPO REAL-->
-    <center>
-    <font color="#864086" <!--linha de codigo que mudou a cor do relogio-->
-    <div id="data-hora"></div>
-    <script>
-      // Função para formatar 1 em 01
-      const zeroFill = n => {
-        return ('0' + n).slice(-2);
-      }
-
-      // Cria intervalo
-      const interval = setInterval(() => {
-        // Pega o horário atual
-        const now = new Date();
-
-        // Formata a data conforme dd/mm/aaaa hh:ii:ss
-        const dataHora = zeroFill(now.getUTCDate()) + '/' + zeroFill((now.getMonth() + 1)) + '/' + now.getFullYear() + ' ' + zeroFill(now.getHours()) + ':' + zeroFill(now.getMinutes()) + ':' + zeroFill(now.getSeconds());
-
-        // Exibe na tela usando a div#data-hora
-        document.getElementById('data-hora').innerHTML = dataHora;
-      }, 1000);
-    </script>
-  </center>
-    
-    <!--FIM DO CODIGO DO RELOGIO EM TEMPO REAL-->
 
     <footer class="footer">
       <center>2022 - by moozespec</center>

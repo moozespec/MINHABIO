@@ -55,17 +55,8 @@ p {
  
 }
 
-p.caldeirao {
-   text-indent: 0;
-   display: inline;
-}
-p.caldeirao + p.caldeirao::before {
-  content: " ¶ ";
-}
-
 
 /*inicio do codigo*/
-/*aumenta o espaço em branco após um parágrafo*/
 /* aumenta o espaço em branco após um parágrafo*/
 p {
   margin-bottom: 1em; 
@@ -123,7 +114,7 @@ p {
 /*inicio do codigo*/
 /*este codigo faz com que o site seja redimensionado automaticamente de acordo com o tamanho da fonte*/
 html {
-  font-seze: calc(60% + 0.8vmin);
+  font-size: calc(60% + 0.8vmin);
 
 }
 /*fim do codigo*/
@@ -180,6 +171,7 @@ br {
 
 form div + div {
   margin-top: 1em;
+  
 }
 
 label {
@@ -187,6 +179,7 @@ label {
   display: inline-block;
   width: 90%;
   text-align: left;
+  
 }
 
 input, textarea {
@@ -198,12 +191,14 @@ Para garantir que todos os campos de texto tenham as mesmas configurações de f
   /* Para dar o mesmo tamanho a todos os campos de texto*/
   width: 350px;
   box-sizing: border-box;
+  
 
   /* Para harmonizar o aspecto e a sensação da borda do campo de texto */
   border: 2px solid #5d37a4;
   box-shadow: 5px 2px #bababa; 
   border-radius: 10px;
   cursor: pointer;
+  
 
 }
 
@@ -212,6 +207,7 @@ Para garantir que todos os campos de texto tenham as mesmas configurações de f
 input:focus, textarea:focus {
   /* Para dar um pouco de destaque aos elementos ativos*/
   border-color: #390fae;
+  
 
 }
 
@@ -221,11 +217,13 @@ textarea {
 
   /* Para dar espaço suficiente para digitar algum texto */
   height: 8em;
+  
 }
 
 .button {
   /* Para posicionar os botões na mesma posição dos campos de texto */
   padding-left: 300px;/* mesmo tamanho que os elementos do rótulo */
+ 
 
 
 

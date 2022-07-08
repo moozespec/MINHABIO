@@ -30,11 +30,44 @@
           <li><a href="falecomigo.html">Fale Comigo</a></li>
         </ul>
       </nav>
+       </div>
 
-      <hgroup>
+
+
+      
+
+<hgroup
+<!--CODIGO HTML PARA UTILIZAR O RELOGIO EM TEMPO REAL-->
+    <div style="text-align:right">
+    <font color="#864086" <!--linha de codigo que mudou a cor do relogio-->
+    <div id="data-hora"></div>
+    <script>
+      // Função para formatar 1 em 01
+      const zeroFill = n => {
+        return ('0' + n).slice(-2);
+      }
+
+      // Cria intervalo
+      const interval = setInterval(() => {
+        // Pega o horário atual
+        const now = new Date();
+
+        // Formata a data conforme dd/mm/aaaa hh:ii:ss
+        const dataHora = zeroFill(now.getUTCDate()) + '/' + zeroFill((now.getMonth() + 1)) + '/' + now.getFullYear() + ' ' + zeroFill(now.getHours()) + ':' + zeroFill(now.getMinutes()) + ':' + zeroFill(now.getSeconds());
+
+        // Exibe na tela usando a div#data-hora
+        document.getElementById('data-hora').innerHTML = dataHora;
+      }, 1000);
+    </script>
+    </div>
+    <!--FIM DO CODIGO DO RELOGIO EM TEMPO REAL-->
+
+
+        
         <h1>Seja Bem Vindo!</h1>
         <h5>Introdução 08/05/2022</h5><br>
-      </hgroup>
+        
+</hgroup>
 
     
 
@@ -70,35 +103,35 @@ Se guie pelo cabeçalho ao topo da página e fique a vontade para ler o que eu e
 
 <!--FIM DOS LINKS-->
 
-    <!--CODIGO HTML PARA UTILIZAR O RELOGIO EM TEMPO REAL-->
-    <center>
-    <font color="#864086" <!--linha de codigo que mudou a cor do relogio-->
-    <div id="data-hora"></div>
-    <script>
-      // Função para formatar 1 em 01
-      const zeroFill = n => {
-        return ('0' + n).slice(-2);
-      }
+    
 
-      // Cria intervalo
-      const interval = setInterval(() => {
-        // Pega o horário atual
-        const now = new Date();
+<center>Número de visitantes
+  <div id="sfc5sdk26uh3r8rcq1sxqjypmg8ftdbwfdk">
+  </div>
+  
+      <script type="text/javascript" src="https://counter9.stat.ovh/private/counter.js?c=5sdk26uh3r8rcq1sxqjypmg8ftdbwfdk&down=async" async>
+      </script>
+</center>
+      <noscript><a href="" title=""><img src="https://counter9.stat.ovh/private/webcontadores.php?c=5sdk26uh3r8rcq1sxqjypmg8ftdbwfdk" border="0" title="" alt=""></a></noscript>
 
-        // Formata a data conforme dd/mm/aaaa hh:ii:ss
-        const dataHora = zeroFill(now.getUTCDate()) + '/' + zeroFill((now.getMonth() + 1)) + '/' + now.getFullYear() + ' ' + zeroFill(now.getHours()) + ':' + zeroFill(now.getMinutes()) + ':' + zeroFill(now.getSeconds());
 
-        // Exibe na tela usando a div#data-hora
-        document.getElementById('data-hora').innerHTML = dataHora;
-      }, 1000);
-    </script>
-    </center>
-    <!--FIM DO CODIGO DO RELOGIO EM TEMPO REAL-->
+
+
+
+
+
+
+
+
+
+
+
+      
 
     <footer class="footer">
       <center>2022 - by moozespec</center>
         </footer>
       
 </body>
-    </div>
+   
 </html>
